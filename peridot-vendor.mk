@@ -845,7 +845,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
@@ -866,8 +865,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/qesdk-secmanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-secmanager.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
@@ -878,9 +875,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.mbnota.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mbnota.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qsap.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.sensors.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.diag_userdebug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag_userdebug.rc \
@@ -888,7 +882,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
@@ -922,8 +915,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim:$(TARGET_COPY_OUT_VENDOR)/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim:$(TARGET_COPY_OUT_VENDOR)/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim \
     vendor/xiaomi/peridot/proprietary/vendor/etc/nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/nfcon.pnscr \
     vendor/xiaomi/peridot/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
@@ -964,13 +955,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_dcfd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_dcfd.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_qapeservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_qapeservice.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_sensors.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_sensors.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
@@ -1063,6 +1048,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndcardparser.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libvui_dmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libvui_dmgr_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr_client.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0-impl.so \
@@ -1129,9 +1116,6 @@ PRODUCT_PACKAGES += \
     libApeSwDec \
     libCB \
     libCneAppJni \
-    libDcfHalFramework \
-    libDcfHalLogger \
-    libDcfHalQtiMutex \
     libDspIOProxy_stub \
     libEvrcSwCodec \
     libFace3DTA \
@@ -1154,7 +1138,6 @@ PRODUCT_PACKAGES += \
     libQtiRilLoadable \
     libSNPESample \
     libScenescape \
-    libSensorsInterface \
     libStereoRectifyWrapper \
     libTrustedInputAIDL \
     libTrustedInputUtils \
@@ -1285,7 +1268,6 @@ PRODUCT_PACKAGES += \
     liblocation_api_msg \
     liblocation_client_api \
     liblocation_integration_api \
-    liblocation_qesdk \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
@@ -1350,7 +1332,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-21.7 \
     libprotobuf-cpp-lite-21.7 \
     libq-perflog \
-    libqape_oem_ext \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1402,9 +1383,6 @@ PRODUCT_PACKAGES += \
     libqdp \
     libqdpr \
     libqdutils \
-    libqesdk2_0 \
-    libqesdk_manager \
-    libqesdoem_query_sys \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -1417,19 +1395,13 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqms \
-    libqms_client \
     libqrtr \
     libqrtrclient \
     libqseed3 \
     libqservice \
     libqsh \
-    libqsh_ble_pb \
     libqsocket \
     libqspm-mem-utils-vendor \
-    libqti-perfd-client \
-    libqti-perfd \
-    libqti-qesdk-secure \
     libqti-util \
     libqti-utils \
     libqtikeymaster4 \
@@ -1526,8 +1498,6 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvppimmotion \
     libvpplibrary \
-    libvui_dmgr \
-    libvui_dmgr_client \
     libvui_intf \
     libwifiobserver \
     libwms \
@@ -1648,7 +1618,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2 \
@@ -1733,14 +1702,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.memory.pasrmanager-V1-ndk \
     vendor.qti.qegahal-V1-ndk_platform \
-    vendor.qti.qesdhal-impl \
-    vendor.qti.qesdhal@1.0_vendor \
-    vendor.qti.qesdhal@1.1_vendor \
-    vendor.qti.qesdhal@1.2_vendor \
-    vendor.qti.qesdhal@1.3 \
-    vendor.qti.qesdhalaidl-V2-ndk_vendor \
-    vendor.qti.qesdsys-V3-ndk \
-    vendor.qti.qesdsys-V4-ndk \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.qspmhal@1.0 \
@@ -1775,17 +1736,12 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     liblhdc \
     liblhdcBT_enc \
-    libqesdk_ndk_platform.qti \
     libtfa98xx_cal \
     libtfa98xx_cal_tfa9873 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
-    vendor.qti.qesdhal@1.0 \
-    vendor.qti.qesdhal@1.1 \
-    vendor.qti.qesdhal@1.2 \
-    vendor.qti.qesdhalaidl-V2-ndk \
     anc.hal \
     android.hardware.gnss-aidl-impl-qti \
     com.qti.actuator.peridot_aac_imx882_gt9764ber_wide_i_actuator \
@@ -2240,7 +2196,6 @@ PRODUCT_PACKAGES += \
     AtFwd2 \
     ImsRcsService \
     PowerOffAlarm \
-    QesdkSysService \
     QtiTelephonyService \
     QtiTelephony \
     ims \
@@ -2288,7 +2243,6 @@ PRODUCT_PACKAGES += \
     imsdcservice-saidl.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
-    qesdk-manager.xml \
     qms-saidl.xml \
     qtiradio-saidl.xml \
     secure_element-service.xml \
@@ -2296,7 +2250,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
-    vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
     vendor.qti.hardware.qxr-service.xml \
@@ -2315,7 +2268,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
-    vendor.qti.qesdsys.service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
@@ -2355,7 +2307,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.soter-service \
@@ -2390,17 +2341,11 @@ PRODUCT_PACKAGES += \
     ppd \
     qconfigfunctest \
     qdcmss \
-    qesdk-manager \
-    qesdk-secmanager \
     qmipriod \
     qms \
     qrtr-cfg \
     qrtr-lookup \
     qrtr-ns \
-    qsap_dcfd \
-    qsap_qapeservice \
-    qsap_sensors \
-    qsap_voiceui \
     qseecom_sample_client \
     qseecomd \
     qti \
