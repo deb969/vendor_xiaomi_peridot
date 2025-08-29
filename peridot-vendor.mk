@@ -1048,6 +1048,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libqtigefar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigefar.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libresampler.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libsndcardparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndcardparser.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libui-v34.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui-v34.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libvui_dmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libvui_dmgr_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvui_dmgr_client.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so \
