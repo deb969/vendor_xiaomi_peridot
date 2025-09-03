@@ -20585,7 +20585,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.dlengine.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20710,7 +20709,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.mawsaliency.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",

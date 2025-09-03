@@ -16,57 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/backend_conf_fs.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf_fs.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_ODM)/etc/camera/102_SummerDay.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_ODM)/etc/camera/103_Fantasy.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_ODM)/etc/camera/104_Meet.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/105_WindSing.png:$(TARGET_COPY_OUT_ODM)/etc/camera/105_WindSing.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/106_Lost.png:$(TARGET_COPY_OUT_ODM)/etc/camera/106_Lost.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/107_Central.png:$(TARGET_COPY_OUT_ODM)/etc/camera/107_Central.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_ODM)/etc/camera/108_NorthernEurope.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/109_Rome.png:$(TARGET_COPY_OUT_ODM)/etc/camera/109_Rome.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_ODM)/etc/camera/110_BlackGold.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/111_GreenOrange.png:$(TARGET_COPY_OUT_ODM)/etc/camera/111_GreenOrange.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/112_CyberPunk.png:$(TARGET_COPY_OUT_ODM)/etc/camera/112_CyberPunk.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/113_BlackIce.png:$(TARGET_COPY_OUT_ODM)/etc/camera/113_BlackIce.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/121_Bleach.png:$(TARGET_COPY_OUT_ODM)/etc/camera/121_Bleach.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/122_Thriller.png:$(TARGET_COPY_OUT_ODM)/etc/camera/122_Thriller.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/123_TealOrange.png:$(TARGET_COPY_OUT_ODM)/etc/camera/123_TealOrange.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/124_JapaneseStyle.png:$(TARGET_COPY_OUT_ODM)/etc/camera/124_JapaneseStyle.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/125_Latin.png:$(TARGET_COPY_OUT_ODM)/etc/camera/125_Latin.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/126_Fantasy2.png:$(TARGET_COPY_OUT_ODM)/etc/camera/126_Fantasy2.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/127_Creamy.png:$(TARGET_COPY_OUT_ODM)/etc/camera/127_Creamy.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/128_Sepia.png:$(TARGET_COPY_OUT_ODM)/etc/camera/128_Sepia.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/129_Vivid.png:$(TARGET_COPY_OUT_ODM)/etc/camera/129_Vivid.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/130_Natural.png:$(TARGET_COPY_OUT_ODM)/etc/camera/130_Natural.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/131_Monochrome.png:$(TARGET_COPY_OUT_ODM)/etc/camera/131_Monochrome.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/132_MonochromeHighContrast.png:$(TARGET_COPY_OUT_ODM)/etc/camera/132_MonochromeHighContrast.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/133_MonochromeBrown.png:$(TARGET_COPY_OUT_ODM)/etc/camera/133_MonochromeBrown.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/134_MonochromeBlue.png:$(TARGET_COPY_OUT_ODM)/etc/camera/134_MonochromeBlue.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/135_Classical.png:$(TARGET_COPY_OUT_ODM)/etc/camera/135_Classical.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/136_Filene.png:$(TARGET_COPY_OUT_ODM)/etc/camera/136_Filene.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/137_GreenNight.png:$(TARGET_COPY_OUT_ODM)/etc/camera/137_GreenNight.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/138_LiteratureAndArt.png:$(TARGET_COPY_OUT_ODM)/etc/camera/138_LiteratureAndArt.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/139_OrangeHoney.png:$(TARGET_COPY_OUT_ODM)/etc/camera/139_OrangeHoney.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/140_Romance.png:$(TARGET_COPY_OUT_ODM)/etc/camera/140_Romance.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/141_FR500.png:$(TARGET_COPY_OUT_ODM)/etc/camera/141_FR500.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/142_FE250.png:$(TARGET_COPY_OUT_ODM)/etc/camera/142_FE250.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/143_RedLantern.png:$(TARGET_COPY_OUT_ODM)/etc/camera/143_RedLantern.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/144_RedHero.png:$(TARGET_COPY_OUT_ODM)/etc/camera/144_RedHero.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/145_TactileBlackWhite.png:$(TARGET_COPY_OUT_ODM)/etc/camera/145_TactileBlackWhite.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/146_TactileGreen.png:$(TARGET_COPY_OUT_ODM)/etc/camera/146_TactileGreen.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/147_Neutral.png:$(TARGET_COPY_OUT_ODM)/etc/camera/147_Neutral.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/148_Mild.png:$(TARGET_COPY_OUT_ODM)/etc/camera/148_Mild.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/149_LilyWhite.png:$(TARGET_COPY_OUT_ODM)/etc/camera/149_LilyWhite.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/150_Bright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/150_Bright.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/151_Fresh.png:$(TARGET_COPY_OUT_ODM)/etc/camera/151_Fresh.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/152_Limpid.png:$(TARGET_COPY_OUT_ODM)/etc/camera/152_Limpid.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/153_KC64.png:$(TARGET_COPY_OUT_ODM)/etc/camera/153_KC64.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/154_V250.png:$(TARGET_COPY_OUT_ODM)/etc/camera/154_V250.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/155_H400.png:$(TARGET_COPY_OUT_ODM)/etc/camera/155_H400.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/156_ColdWhite.png:$(TARGET_COPY_OUT_ODM)/etc/camera/156_ColdWhite.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/157_Native.png:$(TARGET_COPY_OUT_ODM)/etc/camera/157_Native.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/158_BWClassical.png:$(TARGET_COPY_OUT_ODM)/etc/camera/158_BWClassical.png \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/159_Flowers.png:$(TARGET_COPY_OUT_ODM)/etc/camera/159_Flowers.png \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_ODM)/etc/camera/GpuKernelRepo.pb \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/af_class_all.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/af_class_all.dlc \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/af_class_human.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/af_class_human.dlc \
