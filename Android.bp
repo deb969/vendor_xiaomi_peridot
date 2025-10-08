@@ -16,7 +16,7 @@ soong_namespace {
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
         "vendor/qcom/opensource/display",
-        "packages/apps/XiaomiParts"
+        "packages/apps/XiaomiParts",
     ],
 }
 
