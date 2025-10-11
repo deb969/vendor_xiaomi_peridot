@@ -1053,15 +1053,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gen71100_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_sqe.fw \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/android.hardware.audio.common@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-util.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libPipeline_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libPipeline_plugin.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/gpu++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gpu++.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/lib_bt_aptx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_aptx.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/lib_bt_ble.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_ble.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/lib_bt_bundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bt_bundle.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libadreno_compiler_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_compiler_cl.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libagmmixer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmmixer.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gsl.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libats.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libcustomva_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustomva_intf.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libgpumemtracer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpumemtracer.so \
+    vendor/xiaomi/peridot/proprietary/vendor/lib64/libgpuservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpuservice.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/libhotword_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhotword_intf.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
     vendor/xiaomi/peridot/proprietary/vendor/lib64/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-osal.so \
@@ -1466,7 +1471,7 @@ PRODUCT_PACKAGES += \
     libsi \
     libslimclient \
     libsmemlog \
-    libsn100u_fw \
+    libsn220u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libsns_device_mode_stub \

@@ -2852,6 +2852,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libgsl",
+                "liblog",
+                "libnativewindow",
                 "libc++",
                 "libc",
                 "libm",
@@ -12041,7 +12043,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsn100u_fw",
+    name: "libsn220u_fw",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -12049,7 +12051,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsn100u_fw.so",
+                "proprietary/vendor/lib64/libsn220u_fw.so",
             ],
         },
     },
