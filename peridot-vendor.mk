@@ -977,7 +977,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -1023,7 +1022,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -1049,12 +1047,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gen71100_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_gmu.bin \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gen71100_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_sqe.fw \
     vendor/xiaomi/peridot/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/android.hardware.audio.common@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-util.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/egl/libPipeline_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libPipeline_plugin.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/gpu++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gpu++.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libadreno_compiler_cl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_compiler_cl.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libgpumemtracer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpumemtracer.so \
-    vendor/xiaomi/peridot/proprietary/vendor/lib64/libgpuservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpuservice.so \
     vendor/xiaomi/peridot/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
@@ -1147,7 +1139,6 @@ PRODUCT_PACKAGES += \
     libWlanServiceJni \
     lib_bt_lhdc \
     libadm \
-    libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -1343,8 +1334,6 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libpolygon \
-    libprotobuf-cpp-full-21.7 \
-    libprotobuf-cpp-lite-21.7 \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1421,7 +1410,6 @@ PRODUCT_PACKAGES += \
     libqsh \
     libqshcamera \
     libqsocket \
-    libqspm-mem-utils-vendor \
     libqti-qesdk-secure \
     libqtigefar \
     libqtikeymaster4 \
@@ -1489,7 +1477,7 @@ PRODUCT_PACKAGES += \
     libsys_info_cache \
     libsystem_health_mon \
     libtaautoload \
-    libtensorflowlite_c \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
@@ -1747,9 +1735,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhalaidl-V2-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
-    vendor.qti.qspmhal-V1-ndk \
-    vendor.qti.qspmhal-impl \
-    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -1761,18 +1746,18 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.seccam-V1-ndk \
     vendor.xiaomi.sensor.camera-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
-    chre_qsh_shim \
-    libDspIOProxy_skel \
-    libSnpeHtpV73Skel \
-    libdsp_streamer_qvrcam_receiver \
-    libeye_tracking_dsp_sample_skel \
-    libhalide_hexagon_remote_skel \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libtracker_6dof_skel_8450 \
-    nearby.napp_header \
-    nearby \
+    vendor_lib_rfsa_adsp_chre_qsh_shim_so \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
+    vendor_lib_rfsa_adsp_nearby_napp_header \
+    vendor_lib_rfsa_adsp_nearby_so \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -2240,32 +2225,32 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk_platform \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    capi_elus_rx \
-    capi_elus_tx \
-    libCalculator_skel \
-    libQnnHtpV73 \
-    libQnnHtpV73QemuDriver \
-    libQnnHtpV73Skel \
-    libQnnHtpV75 \
-    libQnnHtpV75Skel \
-    libQnnSaver \
-    libQnnSystem \
-    libSnpeHtpV75Skel \
-    libadsp_jpege_skel \
-    libarc_htp_driver_skel \
-    libarcsoft_beauty_hvx_skel \
-    libbitml_nsp_skel \
-    libdsp_streamer_binning \
-    libhme_dsp_skel \
-    libmctfengine_skel \
-    libmialgo_ai_process_cdsp_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_bokeh_depth_cdsp_skel \
-    libmialgo_bokeh_effect_cdsp_skel \
-    libmialgo_ell_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmlawbpostproc_dsp_skel \
+    odm_lib_rfsa_adsp_capi_elus_rx_so \
+    odm_lib_rfsa_adsp_capi_elus_tx_so \
+    odm_lib_rfsa_adsp_libCalculator_skel_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73QemuDriver_so \
+    odm_lib_rfsa_adsp_libQnnHtpV73Skel_so \
+    odm_lib_rfsa_adsp_libQnnHtpV75_so \
+    odm_lib_rfsa_adsp_libQnnHtpV75Skel_so \
+    odm_lib_rfsa_adsp_libQnnSaver_so \
+    odm_lib_rfsa_adsp_libQnnSystem_so \
+    odm_lib_rfsa_adsp_libSnpeHtpV75Skel_so \
+    odm_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    odm_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so \
+    odm_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    odm_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    odm_lib_rfsa_adsp_libhme_dsp_skel_so \
+    odm_lib_rfsa_adsp_libmctfengine_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_ai_process_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_bokeh_depth_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_bokeh_effect_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_ell_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    odm_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     com.google.android.widevine.nonupdatable \
     CACertService \
     CneApp \
@@ -2359,7 +2344,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
-    vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qesdsys.service.xml \
@@ -2453,7 +2437,6 @@ PRODUCT_PACKAGES += \
     slim_daemon \
     sscrpcd \
     ssgqmigd \
-    ssgqmigd64 \
     ssgtzd \
     system_dlkm_modprobe \
     tftp_server \
@@ -2462,8 +2445,6 @@ PRODUCT_PACKAGES += \
     tlpd \
     vendor.dpmd \
     vendor.qti.diag \
-    vendor.qti.hardware.soter-provision \
-    vendor.qti.qspmhal-service \
     vendor_modprobe \
     vppservice \
     wfdhdcphalservice \
