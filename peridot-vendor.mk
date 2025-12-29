@@ -2357,6 +2357,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     ATFWD-daemon \
+    KmInstallKeybox \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
