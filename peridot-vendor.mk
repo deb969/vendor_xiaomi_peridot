@@ -950,8 +950,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/qesdk-manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-manager.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/qesdk-secmanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qesdk-secmanager.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
@@ -1019,8 +1017,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
@@ -1271,7 +1267,6 @@ PRODUCT_PACKAGES += \
     liblocation_api_msg \
     liblocation_client_api \
     liblocation_integration_api \
-    liblocation_qesdk \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
@@ -1386,9 +1381,6 @@ PRODUCT_PACKAGES += \
     libqdp \
     libqdpr \
     libqdutils \
-    libqesdk2_0 \
-    libqesdk_manager \
-    libqesdoem_query_sys \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -1401,8 +1393,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqms \
-    libqms_client \
     libqrtr \
     libqrtrclient \
     libqseed3 \
@@ -1410,7 +1400,6 @@ PRODUCT_PACKAGES += \
     libqsh \
     libqshcamera \
     libqsocket \
-    libqti-qesdk-secure \
     libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
@@ -1483,6 +1472,7 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
+    libtinyxml2_bp4a \
     libtlpd \
     libtlpd_configmgr \
     libtlpd_crypto \
@@ -1503,8 +1493,6 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvppimmotion \
     libvpplibrary \
-    libvui_dmgr \
-    libvui_dmgr_client \
     libvui_intf \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -1727,14 +1715,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qegahal-V1-ndk_platform \
-    vendor.qti.qesdhal-impl \
-    vendor.qti.qesdhal@1.0 \
-    vendor.qti.qesdhal@1.1 \
-    vendor.qti.qesdhal@1.2 \
-    vendor.qti.qesdhal@1.3 \
-    vendor.qti.qesdhalaidl-V2-ndk \
-    vendor.qti.qesdsys-V3-ndk \
-    vendor.qti.qesdsys-V4-ndk \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -1773,7 +1753,6 @@ PRODUCT_PACKAGES += \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
-    libqesdk_ndk_platform.qti \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
@@ -2263,7 +2242,6 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     PowerOffAlarm \
     QCC \
-    QesdkSysService \
     QtiTelephonyService \
     QtiTelephony \
     WfdService \
@@ -2316,7 +2294,6 @@ PRODUCT_PACKAGES += \
     imsdcservice-saidl.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
-    qesdk-manager.xml \
     qms-saidl.xml \
     qtiradio-saidl.xml \
     secure_element-service.xml \
@@ -2346,7 +2323,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
-    vendor.qti.qesdsys.service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
@@ -2418,8 +2394,6 @@ PRODUCT_PACKAGES += \
     qcc-vendor \
     qconfigfunctest \
     qdcmss \
-    qesdk-manager \
-    qesdk-secmanager \
     qmipriod \
     qms \
     qrtr-cfg \
