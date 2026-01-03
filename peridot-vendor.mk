@@ -10,14 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb \
     vendor/xiaomi/peridot/proprietary/odm/etc/acdbdata/Fluence/foursemi/Fluence_acdb_cal_fs.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Fluence/foursemi/Fluence_acdb_cal_fs.acdb \
     vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/adsp_sleep_monitor.conf:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/adsp_sleep_monitor.conf \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/foursemi/mixer_paths_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/foursemi/mixer_paths_cliffs_mtp.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_dynamic.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_static.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/foursemi/resourcemanager_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/foursemi/resourcemanager_cliffs_mtp.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml \
-    vendor/xiaomi/peridot/proprietary/odm/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/backend_conf_fs.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf_fs.xml \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_ODM)/etc/camera/GpuKernelRepo.pb \
@@ -155,52 +147,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/Material/1166466556_252005700:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/Material/1166466556_252005700 \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/Material/1166466556_2571257293 \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/Material/1166466556_4025145477 \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BASE.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_COLOR_LAYER_WITH_MASK_Define_NORMAL_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_MULTIPLY_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_Define_SOFT_LIGHT_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_MULTIPLY_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BLEND_IMAGE_LAYER_WITH_MASK_Define_SOFT_LIGHT_MASK_CHANNEL_TYPE_R_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_BRIGHT_EYE_PROCESS_V2_WITH_PUPIL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_FUSE_OFFSET.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_NORMAL_MESH_WARP_Define_ENABLE_UVMAP.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_EYE.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_NORMAL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_FUSE_OFFSET_SPLITLR.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_V2_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_DEF_CATMULL_ROM.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_FACIAL_REFINE_WARP_Define_ENABLE_EG_SUPPRESSION_ENABLE_UVMAP.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_BILATERAL_1D.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_GAUSS_FIX_KERNEL_1D.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_LUMA_TO_ALPHA.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BLUR.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_MEAN_BOX_2x2.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_NORMAL_LUT_512_512_Define_FRAMEBUFFER_FETCH_ADRENO.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MEANBLUR_1D_Define_USE_ALPHA_WEIGHT.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_MERGE_MASK.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_SIMPLE_PROCESS_ADVANCE_Define_CHANNEL_R.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_FOGGY_VARIANCE.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_NORMAL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_PROCESS_WITH_MASK_Define_MASK_CHANNEL_TYPE_R.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_MOISTURIZING_WEIGHT_DATA.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_GUIDE.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_RETOUCH_TEXTURE_PROCESS_NORMAL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SINGLE_LABEL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_NORMAL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_SPOTLESS_PROCESS_WITH_SKIN_MASK.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_AFFINE.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/OGL_WARP_NORMAL_Define_WARP_TO_ROI.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_P010ToRGB10A2Orientation.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToP010Orientation.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_RGB10A2ToRGB10A2.bin \
@@ -214,9 +160,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUV2YUVUtils_SWAP_UV.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/BuildIn/binShaders64/shader_YUVP010ToYUVP010.bin \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Config/config_mode_all.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_all.json \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Config/config_mode_front.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_front.json \
-    vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Config/config_mode_rear.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Config/config_mode_rear.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/FaceMask.bin \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/0_Spotless/effect.json \
     vendor/xiaomi/peridot/proprietary/odm/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/resources/render/Effect/20_FaceRetouch/Effects/1_SkinSmoothClassical/BeautyMap.bin \
@@ -972,7 +915,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
@@ -996,15 +938,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km300.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km300.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai_6dof_config.xml \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -1019,7 +952,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
@@ -1075,7 +1007,6 @@ PRODUCT_PACKAGES += \
     gyro_fusion_interface \
     libEseUtils \
     libqtigatekeeper \
-    sound_trigger.primary.pineapple \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
@@ -1103,7 +1034,6 @@ PRODUCT_PACKAGES += \
     libApeSwDec \
     libCB \
     libCneAppJni \
-    libDspIOProxy_stub \
     libEvrcSwCodec \
     libFace3DTA \
     libFace3D_hlos \
@@ -1114,23 +1044,15 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libMapService \
     libMiVDR \
     libOpenCL \
     libOpenCL_adreno \
     libPeripheralStateUtils \
     libQ6MSFR_manager_stub \
-    libQEGA.qti \
     libQSEEComAPI \
     libQcelp13SwCodec \
     libQtiRilLoadable \
     libSNPESample \
-    libScenescape \
-    libStereoRectifyWrapper \
-    libTrustedInputAIDL \
-    libTrustedInputUtils \
-    libTrustedUIAIDL \
-    libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
     lib_bt_lhdc \
@@ -1155,7 +1077,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
-    libbt-hidlclient \
     libbtnv \
     libcacertclient \
     libcameraopt \
@@ -1197,17 +1118,13 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
-    libeai_fixed \
-    libeai_float \
     libengineplugin \
     libesesbprovision \
     libeva \
     libeva_util \
-    libeye_tracking_dsp_sample_stub \
     libface3d_dev \
     libfastcrc \
     libfastcvdsp_stub \
@@ -1226,7 +1143,6 @@ PRODUCT_PACKAGES += \
     libgralloccore \
     libgrallocutils \
     libgsl \
-    libhalide_hexagon_host \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
@@ -1249,11 +1165,9 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
-    liblistensoundmodel2vendor \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
-    libloadtrusteduiapp \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
@@ -1328,7 +1242,6 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libpolygon \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -1403,13 +1316,6 @@ PRODUCT_PACKAGES += \
     libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
-    libqvr_cam_cdsp_driver_stub \
-    libqvr_cdsp_driver_stub \
-    libqvr_eyetracking_plugin \
-    libqvrcamera_client.qti \
-    libqvrcameraplayback \
-    libqvrservice \
-    libqvrservice_client.qti \
     libqwes \
     librcc \
     librcmask \
@@ -1438,7 +1344,6 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libshsc \
-    libsi \
     libslimclient \
     libsmemlog \
     libsn220u_fw \
@@ -1478,7 +1383,6 @@ PRODUCT_PACKAGES += \
     libtlpd_crypto \
     libtlpd_internal \
     libtlpd_logger \
-    libtracker_6dof_impl \
     libtrustedapploader \
     libubwcp \
     libultrasound_notify \
@@ -1592,8 +1496,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.gnss-V6-ndk \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1637,7 +1539,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V1-ndk \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
@@ -1684,7 +1585,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sigma_miracast@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter-V1-ndk \
-    vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.vpp-V1-ndk \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
@@ -1714,7 +1614,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
-    vendor.qti.qegahal-V1-ndk_platform \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -2306,7 +2205,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.qconfig-service.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
-    vendor.qti.hardware.qxr-service.xml \
     vendor.qti.hardware.radio.am.xml \
     vendor.qti.hardware.radio.ims.xml \
     vendor.qti.hardware.radio.lpa.xml \
@@ -2316,7 +2214,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_server.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.soter-service.xml \
-    vendor.qti.hardware.trustedui-aidl-service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
@@ -2334,7 +2231,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice.aidl.xml \
     ATFWD-daemon \
     KmInstallKeybox \
-    SoterProvisioningTool \
     adpl \
     adsprpcd \
     batterysecret \
@@ -2358,7 +2254,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
     qcrilNrd \
-    qvrservice \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.display.allocator-service \
@@ -2368,7 +2263,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.soter-service \
-    vendor.qti.hardware.trustedui-aidl-service-qti \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
@@ -2402,8 +2296,6 @@ PRODUCT_PACKAGES += \
     qseecom_sample_client \
     qseecomd \
     qti \
-    qvrdatalogger \
-    qvrservicetest \
     qwes_cli \
     qwesd \
     rmt_storage \
