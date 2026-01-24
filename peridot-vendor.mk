@@ -1393,7 +1393,6 @@ PRODUCT_PACKAGES += \
     libvpphvx \
     libvppimmotion \
     libvpplibrary \
-    libvui_intf \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
