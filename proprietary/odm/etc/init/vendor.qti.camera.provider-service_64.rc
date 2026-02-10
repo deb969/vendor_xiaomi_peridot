@@ -1,7 +1,3 @@
-# Copyright (c) 2023 Qualcomm Technologies, Inc.
-# All Rights Reserved.
-# Confidential and Proprietary - Qualcomm Technologies, Inc.
-
 service vendor.camera-provider /odm/bin/hw/vendor.qti.camera.provider-service_64
     setenv JE_MALLOC_ZERO_FILLING 1
     interface aidl android.hardware.camera.provider.ICameraProvider/vendor_qti/0

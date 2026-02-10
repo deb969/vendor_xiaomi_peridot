@@ -2480,6 +2480,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libadreno_app_profiles",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libadreno_app_profiles.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.qti.qspmhal-V1-ndk",
+                "libqspm-mem-utils-vendor",
+                "libdl",
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libadreno_utils",
     owner: "xiaomi",
     strip: {
@@ -10199,6 +10232,32 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libqsocket.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqspm-mem-utils-vendor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqspm-mem-utils-vendor.so",
+            ],
+            shared_libs: [
+                "vendor.qti.qspmhal-V1-ndk",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -18782,6 +18841,92 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal-impl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "vendor.qti.qspmhal-V1-ndk",
+                "libqspm-mem-utils-vendor",
+                "liblog",
+                "libcutils",
+                "libbinder",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qspmhal@1.0",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.voiceprint@1.0",
     owner: "xiaomi",
     strip: {
@@ -19088,55 +19233,10 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so",
-    filename: "libdsp_streamer_qvrcam_receiver.so",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so",
-    filename: "libeye_tracking_dsp_sample_skel.so",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so",
     filename: "libhalide_hexagon_remote_skel.so",
     owner: "xiaomi",
     src: "proprietary/vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so",
-    filename: "libqvr_3dof_tracker_skel.so",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so",
-    filename: "libqvr_cam_dsp_driver_skel.so",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so",
-    relative_install_path: "adsp",
-    soc_specific: true,
-}
-
-prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so",
-    filename: "libqvr_dsp_driver_skel.so",
-    owner: "xiaomi",
-    src: "proprietary/vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
 }
@@ -20703,7 +20803,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.actuator.peridot_aac_imx882_gt9764ber_wide_i_actuator.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20753,7 +20852,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_aw86016csr_wide_ii_actuator.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20803,7 +20901,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_gt9764ber_wide_iii_actuator.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20853,7 +20950,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_aac_imx355_gt24p64e_ultra_i_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20903,7 +20999,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_aac_imx882_gt24p128f_wide_i_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -20953,7 +21048,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_aac_ov20b40_gt24p64e_front_ii_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21003,7 +21097,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx355_p24c64e_ultra_ii_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21053,7 +21146,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx882_bl24sa128b_wide_ii_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21103,7 +21195,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_ofilm_imx882_gt24p128f_wide_iii_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21153,7 +21244,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.eeprom.peridot_ofilm_ov20b40_p24c64e_front_eeprom.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21203,7 +21293,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.sensor.peridot_aac_imx355_ultra_i.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21253,7 +21342,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.sensor.peridot_aac_imx882_wide_i.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21303,7 +21391,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/com.qti.sensor.peridot_ofilm_ov20b40_front.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21353,7 +21440,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.jigan.node.videobokeh.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21408,7 +21494,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.aiasd.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21471,7 +21556,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.dlengine.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21753,7 +21837,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.skinbeautifier.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21849,7 +21932,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.videobokeh.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21904,7 +21986,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.videofilter.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -21959,7 +22040,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.videonight.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22130,7 +22210,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.hwcfg.bps.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22182,7 +22261,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.hwcfg.ife.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22234,7 +22312,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.hwcfg.ipe.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22317,7 +22394,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.aon.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22402,7 +22478,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.depth.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22454,7 +22529,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.depthprovider.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22515,7 +22589,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.dewarp.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22662,7 +22735,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.eisv2.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22723,7 +22795,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.eisv3.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22784,7 +22855,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.evadepth.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -22936,7 +23006,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.gme.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23030,7 +23099,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.gyrornn.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23091,7 +23159,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.hdr10pgen.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23144,7 +23211,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.hdr10phist.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23268,7 +23334,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.itofpreprocess.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23383,7 +23448,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.ml.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23436,7 +23500,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.mlinference.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23519,7 +23582,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.pixelstats.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23602,7 +23664,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.seg.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -23766,7 +23827,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.swec.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -24029,7 +24089,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.node.swregistration.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -24423,7 +24482,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.qti.stats.cnndriver.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -25005,7 +25063,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/libcamxevainterface.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -25057,7 +25114,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/libdepthmapwrapper_itof.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -25107,7 +25163,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/libdepthmapwrapper_secure.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -25157,7 +25212,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/libchxlogicalcameratable.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26229,7 +26283,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.camx.chiiqutils.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26289,7 +26342,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.chiusecaseselector.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26341,7 +26393,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.afbrckt.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26393,7 +26444,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.anchorsync.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26455,7 +26505,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.demux.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26507,7 +26556,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.derivedoffline.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26560,7 +26608,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.fusion.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26612,7 +26659,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.generic.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26664,7 +26710,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.gs.sm8650.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26734,7 +26779,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.hdr.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26786,7 +26830,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.mcreprocrt.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26838,7 +26881,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.memcpy.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26890,7 +26932,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.metadataserializer.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26942,7 +26983,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.mfsr.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -26994,7 +27034,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.ml.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27046,7 +27085,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.mux.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27098,7 +27136,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.offlinestatsregeneration.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27153,7 +27190,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.qcfa.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27205,7 +27241,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.rawhdr.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27257,7 +27292,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.realtimeserializer.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27309,7 +27343,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.rt.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27361,7 +27394,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.rtmcx.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27414,7 +27446,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.serializer.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27466,7 +27497,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.statsregeneration.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27518,7 +27548,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.stub.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27570,7 +27599,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.feature2.swmf.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27656,7 +27684,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qti.qseeutils.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27775,7 +27802,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qualcomm.mcx.distortionmapper.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27827,7 +27853,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qualcomm.mcx.linearmapper.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27879,7 +27904,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qualcomm.mcx.nonlinearmapper.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27932,7 +27956,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qualcomm.mcx.policy.mfl.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -27984,7 +28007,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.qualcomm.qti.mcx.usecase.extension.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -28130,7 +28152,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.xiaomi.camx.hook.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -28180,7 +28201,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/com.xiaomi.chi.hook.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -28334,7 +28354,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/hw/camera.qcom.sm8650.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -28531,7 +28550,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/hw/com.qti.chi.offline.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -30704,7 +30722,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcamerapostproc.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -30878,7 +30895,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcamxhwnodecontext.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -30926,7 +30942,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcamxifestriping.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -30974,7 +30989,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcamximageformatutils.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -31034,7 +31048,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcamxncsdatafactory.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -31641,7 +31654,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcom.xiaomi.mawutilsold.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -31786,7 +31798,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libcommonchiutils.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32072,7 +32083,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libfastmessage.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32368,7 +32378,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libhme.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32465,7 +32474,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libipebpsstriping.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32512,7 +32520,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libipebpsstriping170.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32559,7 +32566,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libipebpsstriping480.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32606,7 +32612,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libisphwsetting.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32653,7 +32658,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libjpege.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32725,7 +32729,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmctfengine_stub.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -32799,7 +32802,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmfec.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -33988,7 +33990,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmmcamera_bestats.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -34035,7 +34036,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmmcamera_cac.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -34083,7 +34083,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmmcamera_lscv35.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -34130,7 +34129,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmmcamera_pdpc.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -34285,7 +34283,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libofflinefeatureintf.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -34415,7 +34412,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libopestriping.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -35001,7 +34997,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libtfestriping.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -35083,7 +35078,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libubifocus.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -35543,7 +35537,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -35600,7 +35593,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -35653,7 +35645,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -36862,6 +36853,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.qspmhal-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.displayfeature_aidl-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml",
@@ -37594,40 +37594,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libqtigatekeeper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.keymaster@4.0-service-qti",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "android.hardware.keymaster@4.0",
-                "libqtikeymaster4",
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -39336,35 +39302,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "thermal-engine-v2",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/thermal-engine-v2",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqmi_common_so",
-                "libqmi_cci",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "time_daemon",
     owner: "xiaomi",
     target: {
@@ -39462,6 +39399,37 @@ sh_binary {
     owner: "xiaomi",
     src: "proprietary/vendor/bin/vendor.qti.diag.sh",
     filename: "vendor.qti.diag.sh",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.qspmhal-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.qti.qspmhal-service",
+            ],
+            shared_libs: [
+                "vendor.qti.qspmhal-V1-ndk",
+                "vendor.qti.qspmhal-impl",
+                "liblog",
+                "libutils",
+                "libavservices_minijail",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 

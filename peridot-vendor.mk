@@ -593,28 +593,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/firmware/evass-lt.b19:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.b19 \
     vendor/xiaomi/peridot/proprietary/odm/firmware/evass-lt.mbn:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.mbn \
     vendor/xiaomi/peridot/proprietary/odm/firmware/evass-lt.mdt:$(TARGET_COPY_OUT_ODM)/firmware/evass-lt.mdt \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b00:$(TARGET_COPY_OUT_ODM)/firmware/evass.b00 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b01:$(TARGET_COPY_OUT_ODM)/firmware/evass.b01 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b02:$(TARGET_COPY_OUT_ODM)/firmware/evass.b02 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b03:$(TARGET_COPY_OUT_ODM)/firmware/evass.b03 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b04:$(TARGET_COPY_OUT_ODM)/firmware/evass.b04 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b05:$(TARGET_COPY_OUT_ODM)/firmware/evass.b05 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b06:$(TARGET_COPY_OUT_ODM)/firmware/evass.b06 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b07:$(TARGET_COPY_OUT_ODM)/firmware/evass.b07 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b08:$(TARGET_COPY_OUT_ODM)/firmware/evass.b08 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b09:$(TARGET_COPY_OUT_ODM)/firmware/evass.b09 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b10:$(TARGET_COPY_OUT_ODM)/firmware/evass.b10 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b11:$(TARGET_COPY_OUT_ODM)/firmware/evass.b11 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b12:$(TARGET_COPY_OUT_ODM)/firmware/evass.b12 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b13:$(TARGET_COPY_OUT_ODM)/firmware/evass.b13 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b14:$(TARGET_COPY_OUT_ODM)/firmware/evass.b14 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b15:$(TARGET_COPY_OUT_ODM)/firmware/evass.b15 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b16:$(TARGET_COPY_OUT_ODM)/firmware/evass.b16 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b17:$(TARGET_COPY_OUT_ODM)/firmware/evass.b17 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b18:$(TARGET_COPY_OUT_ODM)/firmware/evass.b18 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.b19:$(TARGET_COPY_OUT_ODM)/firmware/evass.b19 \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.mbn:$(TARGET_COPY_OUT_ODM)/firmware/evass.mbn \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/evass.mdt:$(TARGET_COPY_OUT_ODM)/firmware/evass.mdt \
     vendor/xiaomi/peridot/proprietary/odm/firmware/focaltech_ts_fw_TianMa.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_TianMa.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/focaltech_ts_fw_TianMa2.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_TianMa2.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/fs19xx.fsm:$(TARGET_COPY_OUT_ODM)/firmware/fs19xx.fsm \
@@ -626,7 +604,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_firmware_peridot_csot_second.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_peridot_csot_second.bin \
     vendor/xiaomi/peridot/proprietary/odm/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_ODM)/firmware/goodix_test_limits_255.csv \
     vendor/xiaomi/peridot/proprietary/odm/firmware/vpu30_2v.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu30_2v.mbn \
-    vendor/xiaomi/peridot/proprietary/odm/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu33_4v.mbn \
     vendor/xiaomi/peridot/proprietary/odm/lib64/bm3b68v04s12n52.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm3b68v04s12n52.bin \
     vendor/xiaomi/peridot/proprietary/odm/lib64/bm3b68v04s12n53.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm3b68v04s12n53.bin \
     vendor/xiaomi/peridot/proprietary/odm/lib64/bm3b73v04s12n02.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm3b73v04s12n02.bin \
@@ -862,7 +839,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/gps_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gps_diag.cfg \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/hal_uuid_map_peridot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_peridot.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/android.hardware.gatekeeper-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service-qti.rc \
@@ -915,6 +891,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/peridot/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -933,7 +910,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim:$(TARGET_COPY_OUT_VENDOR)/etc/models/vui/sm8_gr1UsPdk6XsMfcn220819Enpu4FloateAIv34.uim \
     vendor/xiaomi/peridot/proprietary/vendor/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim:$(TARGET_COPY_OUT_VENDOR)/etc/models/vui/sm8_gr3UsMFCN230612eAIv34ENPUv4Float.uim \
-    vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km300.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km300.xml \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/com.android.se.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.se.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/xiaomi/peridot/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/peridot/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
@@ -949,6 +926,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/xiaomi/peridot/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
@@ -962,6 +940,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/peridot/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/peridot/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
+    vendor/xiaomi/peridot/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/peridot/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -1054,6 +1033,7 @@ PRODUCT_PACKAGES += \
     libWlanServiceJni \
     lib_bt_lhdc \
     libadm \
+    libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -1310,6 +1290,7 @@ PRODUCT_PACKAGES += \
     libqsh \
     libqshcamera \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqtigefar \
     libqtikeymaster4 \
     libqtikeymint \
@@ -1609,6 +1590,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
+    vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-impl \
+    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
@@ -1623,12 +1607,7 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_chre_qsh_shim_so \
     vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
     vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
-    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
-    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
     vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
-    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
-    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
-    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
     vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
     vendor_lib_rfsa_adsp_nearby_napp_header \
     vendor_lib_rfsa_adsp_nearby_so \
@@ -2210,6 +2189,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
+    vendor.qti.qspmhal-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     android.hardware.gnss-aidl-service-qti.xml \
@@ -2241,7 +2221,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.contexthub-service.qmi \
     android.hardware.gatekeeper-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
     android.hardware.secure_element-service.qti \
     android.hardware.security.keymint-service-qti \
     qconfigservice \
@@ -2297,11 +2276,11 @@ PRODUCT_PACKAGES += \
     ssgtzd \
     system_dlkm_modprobe \
     tftp_server \
-    thermal-engine-v2 \
     time_daemon \
     tlpd \
     vendor.dpmd \
     vendor.qti.diag \
+    vendor.qti.qspmhal-service \
     vendor_modprobe \
     vppservice \
     wfdhdcphalservice \
