@@ -7,7 +7,7 @@ service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.
     socket pps stream 0660 system system
     writepid /dev/cpuset/system-background/tasks
     # MIUI ADD: Performance_MemoryEnhance
-    writepid /sys/kernel/reserve_pool/pid
+    writepid /sys/kernel/reserve_pool/pid /sys/kernel/mi_mempool/pids
     # END Performance_MemoryEnhance
 
 on post-fs-data

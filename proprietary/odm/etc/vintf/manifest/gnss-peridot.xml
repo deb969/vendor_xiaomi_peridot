@@ -1,3 +1,4 @@
+<!--MIUI ADD: GPS_SingleBeidou -->
 <!-- Copyright (c) 2021, The Linux Foundation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -63,9 +64,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <manifest version="1.0" type="device">
     <hal format="aidl">
         <name>android.hardware.gnss</name>
-<!--MIUI ADD: GPS_StabilityEnhance -->
         <version>3</version>
-<!--END GPS_StabilityEnhance      -->
         <fqname>IGnss/default</fqname>
     </hal>
 </manifest>
+<!--END GPS_SingleBeidou      -->

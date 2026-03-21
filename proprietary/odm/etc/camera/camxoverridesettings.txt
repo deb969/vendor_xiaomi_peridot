@@ -275,4 +275,10 @@ LoadTuningDataManagerAsync=TRUE
 enableOISOptimization=TRUE
 
 extraBufferAlloc=9
-SDK_LOG_LEVEL=3
+SDK_LOG_LEVEL=4
+
+WatermarkVersion=3.002
+FilterVersion=3.002
+
+enableInternalKMDRecovery=TRUE
+crcErrorDivisor=100

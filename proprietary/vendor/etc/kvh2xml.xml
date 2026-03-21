@@ -220,6 +220,8 @@
       <VALUE val="0xd" name="Level_13"/>
       <VALUE val="0xe" name="Level_14"/>
       <VALUE val="0xf" name="Level_15"/>
+      <VALUE val="0x10" name="Level_16"/>
+      <VALUE val="0x11" name="Level_17"/>
     </KEY>
     <KEY name="USB_Vendor_Id" id="0xe6000000" description="Usb_Vendor_Id">
       <VALUE val="0x0" name="USB_PROD_0"/>
@@ -427,6 +429,7 @@
       <VALUE val="0x2" name="Bypass"/>
       <VALUE val="0x3" name="Cinema"/>
       <VALUE val="0x4" name="LowPower"/>
+      <VALUE val="0x5" name="Clib"/>
     </KEY>
     <KEY name="SP_Dev_Map" id="0xbe000000" description="SpkrProtDevMap">
       <VALUE val="0x0" name="Disable_SP"/>

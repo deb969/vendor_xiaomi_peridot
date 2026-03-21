@@ -129,7 +129,58 @@
         "mivi_reset_platforms": [
             "0X42808000, 11,         //MPCTLV3_GPU_MAX_POWER_LEVEL, 0xB",
             "0X42804000, 11,         //MPCTLV3_GPU_MIN_POWER_LEVEL, 0xB"
+        ],
+        "camera_boost_max": [
+            "0x40C00000, 0x1,          //MPCTLV3_SCHED_BOOST, 0x1",
+            "0x40804100, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40800100, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40804000, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40800000, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40804200, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40800200, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40804300, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40800300, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40C44000, 0x7,          // cpuset system background 系统后台应用可使用CPU范围. 7-> 0111 可使用 CPU为 0-2",
+            "0x40C3C000, 0xF8,         // cpuset top app F8->11111000 CPU可使用范围3-7"
+        ],
+        "camera_boost_thermal_1": [
+            "0x40C00000, 0x1,          //MPCTLV3_SCHED_BOOST, 0x1",
+            "0x40804100, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40800100, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40804000, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40800000, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40804200, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40800200, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40804300, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40800300, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40C44000, 0x7,          // cpuset system background 系统后台应用可使用CPU范围. 7-> 0111 可使用 CPU为 0-2",
+            "0x40C3C000, 0xF8,         // cpuset top app F8->11111000 CPU可使用范围3-7"
+        ],
+        "camera_boost_thermal_2": [
+            "0x40C00000, 0x3,          //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804100, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40800100, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40804000, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40800000, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40804200, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40800200, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40804300, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40800300, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40C44000, 0x7,          // cpuset system background 系统后台应用可使用CPU范围. 7-> 0111 可使用 CPU为 0-2",
+            "0x40C3C000, 0xF8,         // cpuset top app F8->11111000 CPU可使用范围3-7"
+        ],
+        "camera_boost_thermal_3": [
+            "0x40C00000, 0x3,          //MPCTLV3_SCHED_BOOST, 0x3",
+            "0x40804100, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40800100, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, 0xffff",
+            "0x40804000, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40800000, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 0xffff",
+            "0x40804200, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40800200, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0, 0xffff",
+            "0x40804300, 0xffff,       //MPCTLV3_MAX_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40800300, 0xffff,       //MPCTLV3_MIN_FREQ_CLUSTER_TITANIUM_CORE_0, 0xffff",
+            "0x40C44000, 0x7,          // cpuset system background 系统后台应用可使用CPU范围. 7-> 0111 可使用 CPU为 0-2",
+            "0x40C3C000, 0xF8,         // cpuset top app F8->11111000 CPU可使用范围3-7"
         ]
-
     }
 }
