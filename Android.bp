@@ -21617,7 +21617,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/camera/components/com.mi.node.mawsaliency.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -28528,7 +28527,7 @@ cc_prebuilt_library_shared {
                 "libmialgoengine",
                 "libsync",
                 "libutils",
-                "libui-v34",
+                "libui",
                 "libhidlbase",
                 "libprocessgroup",
                 "libcom.xiaomi.attribute",
@@ -33506,7 +33505,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmibokeh_845_video.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libSNPE",
                 "libOpenCL",
                 "liblog",
@@ -35277,7 +35275,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libwrapper_dlengine.so",
             ],
             shared_libs: [
-                "libwrapper_dlengine_shim",
                 "libSNPE",
                 "libmialgo_utils",
                 "libc++_shared",
